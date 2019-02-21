@@ -1,24 +1,27 @@
 {
-    "name": "hampe/inky",
+    "name": "dieterholvoet/inky",
     "description": "PHP Implementation of ZURB's Foundation for Email parser (Inky)",
-    "version":     "1.3.6.2",
+    "version": "1.3.7",
     "license": "MIT",
     "authors": [
         {
-            "name": "Thomas Hampe",
-            "email": "github@hampe.co"
+            "name": "Dieter Holvoet",
+            "email": "dieter.holvoet@gmail.com"
         }
     ],
     "require-dev": {
-      "phpunit/phpunit": "4.8.*"
+        "phpunit/phpunit": "^6.5"
     },
     "autoload": {
         "psr-4": {
-          "Hampe\\Inky\\": "src/"
+            "Hampe\\Inky\\": "src/"
         }
     },
     "require": {
-        "php": ">=5.4.0",
-        "paquettg/php-html-parser": "^1.7"
+        "php": ">=7.1",
+        "paquettg/php-html-parser": "^2.0"
+    },
+    "replace": {
+        "thampe/inky": "self.version"
     }
 }
